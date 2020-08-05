@@ -1,0 +1,272 @@
+body, html {
+height: 100vh;
+}
+
+
+body{
+font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(auto,5);
+  grid-template-areas:
+"top-container"
+"supervisor"
+"teambuilder"
+"Karma"
+"calculator"
+}
+
+
+h5 {
+  margin: 0;
+}
+
+h6 {
+  margin: 10px 5px 5px 5px;
+}
+
+p {
+  margin: auto 5px 10px 5px;
+  font-weight: 200;
+  font-size: 15px;
+}
+
+top-container {
+  grid-area: top-container;
+  margin: 0;
+}
+
+
+.Red {
+  font-weight: 200;
+}
+
+.PbT {
+  font-weight: 600;
+}
+
+.intro {
+  font-size: 17px;
+  width: 70%;
+  margin: 20px auto 60px auto;
+}
+
+
+.supervisor {
+  grid-area: supervisor;
+  border-top: solid 5px;
+  border-top-color: lightblue;
+  box-shadow: 0 5px 10px lightgrey;
+  border-radius: 10px;
+  height: 200px;
+  width: 300px;
+  padding: 20px;
+  margin: 0 auto 10%;
+  text-align: left;
+}
+
+.magnify-eye {
+  float: right;
+  margin: 20px 11px auto;
+}
+
+
+.teambuilder {
+  grid-area: teambuilder;
+  border-top: solid 5px;
+  border-top-color: red;
+box-shadow: 0 5px 10px lightgrey;
+    border-radius: 10px;
+  height: 200px;
+  width: 300px;
+  padding: 20px;
+  margin: 0 auto 10%;
+  text-align: left;
+
+}
+
+.house {
+  float: right;
+  margin: 20px 11px auto;
+}
+
+.Karma {
+  grid-area: Karma;
+  border-top: solid 5px;
+  border-top-color: yellow;
+  box-shadow: 0 5px 10px lightgrey;
+  border-radius: 10px;
+  height: 200px;
+  width: 300px;
+  padding: 20px;
+  margin: 0 auto 10%;
+  text-align: left;
+}
+
+.lightbulb {
+  float: right;
+margin: 20px 11px auto;
+}
+
+.calculator {
+  grid-area: calculator;
+  border-top: solid 5px;
+  border-top-color: blue;
+  box-shadow: 0 5px 10px lightgrey;
+  border-radius: 10px;
+  height: 200px;
+  width: 300px;
+  padding: 20px;
+  margin: 0 auto 10%;
+  text-align: left;
+}
+
+.numbers {
+  float: right;
+margin: 20px 11px auto;
+}
+
+
+@media only screen and (min-width: 768px){
+  body{
+    font-family: 'Poppins', sans-serif;
+      text-align: center;
+    font-size: 2rem;
+  }
+
+      .boxes{
+       display: grid;
+       grid-template-areas:" top-container supervisor teambuilder calculator karma";
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 80px;
+grid-gap:30px;
+width: 360px;
+      }
+
+.top-container{
+  grid-area: top-container;
+    position: relative;
+    left:20px;
+    top:50px;
+}
+
+  h5 {
+    margin: 0;
+  }
+
+  h6 {
+    margin: 10px 5px 5px 5px;
+  }
+
+  p {
+    margin: auto 5px 10px 5px;
+    font-weight: 200;
+    font-size: 15px;
+  }
+
+
+  .Red {
+    font-weight: 200;
+  }
+
+  .PbT {
+    font-weight: 600;
+  }
+
+  .intro {
+    font-size: 17px;
+    width: 30%;
+    margin: 20px auto 60px auto;
+  }
+
+
+  .supervisor {
+    grid-area: supervisor;
+  position: relative;
+  left: 119%;
+  top: 100%;
+    border-top: solid 5px;
+    border-top-color: lightblue;
+    box-shadow: 0 5px 10px lightgrey;
+    border-radius: 10px;
+    height: 200px;
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+  }
+
+  .magnify-eye {
+    float: right;
+    margin: 20px 11px auto;
+  }
+
+
+  .teambuilder {
+    grid-area: teambuilder;
+    position:relative;
+    left: 120%;
+    bottom: 70%;
+    border-top: solid 5px;
+    border-top-color: red;
+  box-shadow: 0 5px 10px lightgrey;
+      border-radius: 10px;
+    height: 200px;
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+
+  }
+
+  .house {
+    float: right;
+    margin: 20px 11px auto;
+  }
+
+  .Karma {
+    grid-area: karma;
+      position:relative;
+      right: 97%;
+      top: 283%;
+    border-top: solid 5px;
+    border-top-color: yellow;
+    box-shadow: 0 5px 10px lightgrey;
+    border-radius: 10px;
+    height: 200px;
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+  }
+
+  .lightbulb {
+    float: right;
+  margin: 20px 11px auto;
+  }
+
+  .calculator {
+    grid-area: calculator;
+    position:relative;
+    left: 121%;
+    top: 100%;
+    border-top: solid 5px;
+    border-top-color: blue;
+    box-shadow: 0 5px 10px lightgrey;
+    border-radius: 10px;
+    height: 200px;
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+  }
+
+  .numbers {
+    float: right;
+  margin: 20px 11px auto;
+  }
+
+
+
+
+
+
+}
